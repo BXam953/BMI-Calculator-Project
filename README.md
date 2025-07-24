@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BMI Tracker — Full-Stack Health Tracking App
 
-## Getting Started
+**BMI Tracker** is a full-stack web application developed using **Next.js**, **Node.js**, and a relational **SQL database**. It allows users to register, log in, and manage their Body Mass Index (BMI) records through a secure and responsive interface.
 
-First, run the development server:
+This project demonstrates secure authentication, RESTful CRUD operations, and SQL-backed data persistence — all wrapped in a polished frontend built with Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+> 💡 Built independently as a real-world portfolio project to showcase full-stack web development skills, including auth, API development, SQL design, and deployment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[https://bmi.bxmstudio.com](https://bmi.bxmstudio.com) *(add this once deployed)*
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔐 Core Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 👤 **User Authentication**
+  - Sign up / Login / Logout
+  - Passwords securely hashed
+  - Session handling via tokens or cookies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 📈 **BMI Calculation**
+  - Users input weight and height
+  - BMI is calculated and stored in the database
 
-## Deploy on Vercel
+- 📦 **Full CRUD**
+  - Create, read, update, and delete BMI entries
+  - Form-based submission via Next.js frontend
+  - Input validation and error handling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🧱 **SQL Database Integration**
+  - Tables for users and BMI records
+  - Secure querying via parameterized SQL
+  - Optional ORM (e.g., Prisma, Sequelize)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 📊 **User Dashboard**
+  - View BMI history in a clean, user-friendly UI
+  - Visual feedback for healthy BMI ranges
+
+---
+
+## 🛠 Tech Stack
+
+| Tech             | Purpose                                 |
+|------------------|------------------------------------------|
+| **Next.js**      | Frontend framework (React + SSR)        |
+| **Node.js**      | Custom backend server / API handlers     |
+| **SQL (PostgreSQL / MySQL)** | Relational database for persistent storage |
+| **Tailwind CSS** | Frontend styling                        |
+| **JWT or Sessions** | User authentication & token management |
+
+---
